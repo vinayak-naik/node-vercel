@@ -7,6 +7,13 @@ const app = express();
 app.use(express.json());
 
 // Routes
+// Define a test route
+app.get('/test', (req, res) => {
+    res.send('This is a test route!');
+  });
+  app.get('/*', (req, res) => {
+    res.send('Route not found!  --vinayak');
+  });
 app.use("/home", home);
 
 // connection
