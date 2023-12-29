@@ -11,7 +11,7 @@ app.use(express.json());
 app.get('/test', (req, res) => {
     res.send('This is a test route!');
   });
-  app.get('/*', (req, res) => {
+  app.get('/', (req, res) => {
     res.send('Route not found!  --vinayak');
   });
 app.use("/home", home);
